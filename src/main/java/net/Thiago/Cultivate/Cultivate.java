@@ -1,6 +1,9 @@
 package net.Thiago.Cultivate;
 
 import com.mojang.logging.LogUtils;
+import net.Thiago.Cultivate.Item.ModCreativeModeTabs;
+import net.Thiago.Cultivate.Item.ModItems;
+import net.Thiago.Cultivate.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,10 +26,15 @@ public class Cultivate
     public Cultivate()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -34,8 +42,11 @@ public class Cultivate
 
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event)
-    {
+    private void addCreative(CreativeModeTabEvent.BuildContents event) {
+        if(event.getTab() == ModCreativeModeTabs.CULTIVATE_TAB) {
+            event.accept(ModItems.CULTIVATION_BOOK);
+            event.accept(ModBlocks.ESSENCE_ORE_BLOCK);
+        }
     }
 
 
