@@ -1,7 +1,7 @@
 package net.Thiago.Cultivate.block;
 
 import net.Thiago.Cultivate.Cultivate;
-import net.Thiago.Cultivate.Item.ModItems;
+import net.Thiago.Cultivate.init.CultivateModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -30,7 +30,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name,RegistryObject<T> block){
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+        return CultivateModItems.REGISTRY.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties()));
     }
 
