@@ -1,12 +1,11 @@
 
-package net.Thiago.Cultivate.item;
+package net.Thiago.Cultivate.Item;
 
 import net.Thiago.Cultivate.procedures.EssenceStonePlayerFinishesUsingIemProcedure;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
@@ -17,12 +16,7 @@ import java.util.List;
 
 public class EssenceStoneItem extends Item {
 	public EssenceStoneItem() {
-		super(new Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
-	}
-
-	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 1;
+		super(new Properties().stacksTo(64).rarity(Rarity.RARE));
 	}
 
 	@Override

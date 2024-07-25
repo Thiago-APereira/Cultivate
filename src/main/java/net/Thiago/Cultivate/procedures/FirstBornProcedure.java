@@ -28,14 +28,14 @@ public class FirstBornProcedure {
 		double firstTime = 0;
 		if ((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).setInt == 0) {
 			{
-				double _setval = Mth.nextInt(RandomSource.create(), 10, 15);
+				float _setval = Mth.nextInt(RandomSource.create(), 10, 15);
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.talent = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			{
-				double _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent;
+				float _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.italent = _setval;
 					capability.syncPlayerVariables(entity);
@@ -43,7 +43,7 @@ public class FirstBornProcedure {
 			}
 		}
 		{
-			double _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).setInt + 1;
+			float _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).setInt + 1;
 			entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.setInt = _setval;
 				capability.syncPlayerVariables(entity);

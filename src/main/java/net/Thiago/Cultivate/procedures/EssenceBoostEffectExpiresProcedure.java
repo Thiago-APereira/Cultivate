@@ -8,7 +8,7 @@ public class EssenceBoostEffectExpiresProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).italent;
+			float _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).italent;
 			entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.talent = _setval;
 				capability.syncPlayerVariables(entity);

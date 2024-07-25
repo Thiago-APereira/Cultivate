@@ -9,7 +9,7 @@ public class StageCapProcedure {
 			return;
 		if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 2nd stage\"")) {
 			{
-				double _setval = 200000;
+				float _setval = 200000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -17,7 +17,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 3rd stage\"")) {
 			{
-				double _setval = 300000;
+				float _setval = 300000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -25,7 +25,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 4th stage\"")) {
 			{
-				double _setval = 400000;
+				float _setval = 400000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -33,7 +33,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 5th stage\"")) {
 			{
-				double _setval = 500000;
+				float _setval = 500000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -41,7 +41,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 6th stage\"")) {
 			{
-				double _setval = 600000;
+				float _setval = 600000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -49,7 +49,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 7th stage\"")) {
 			{
-				double _setval = 700000;
+				float _setval = 700000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -57,7 +57,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 8th stage\"")) {
 			{
-				double _setval = 800000;
+				float _setval = 800000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -65,7 +65,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 9th stage\"")) {
 			{
-				double _setval = 900000;
+				float _setval = 900000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -73,7 +73,7 @@ public class StageCapProcedure {
 			}
 		} else if (((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).cultivation_stage).equals("\"Foundation 10th stage\"")) {
 			{
-				double _setval = 1000000;
+				float _setval = 1000000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);
@@ -81,7 +81,7 @@ public class StageCapProcedure {
 			}
 		} else {
 			{
-				double _setval = 100000;
+				float _setval = 100000;
 				entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.stageCap = _setval;
 					capability.syncPlayerVariables(entity);

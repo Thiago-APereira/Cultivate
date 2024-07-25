@@ -1,6 +1,7 @@
 package net.Thiago.Cultivate.procedures;
 
 import io.netty.buffer.Unpooled;
+import net.Thiago.Cultivate.network.CultivateModVariables;
 import net.Thiago.Cultivate.world.inventory.LMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
@@ -22,7 +23,7 @@ public class OpenProcedure {
 			if (entity instanceof Player _player)
 				_player.closeContainer();
 		} else {
-			if (entity instanceof ServerPlayer _ent) {
+			if (entity instanceof ServerPlayer _ent && (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).enable_cultivation) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
 				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 					@Override

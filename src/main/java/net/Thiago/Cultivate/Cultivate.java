@@ -1,7 +1,7 @@
 package net.Thiago.Cultivate;
 
 import com.mojang.logging.LogUtils;
-import net.Thiago.Cultivate.item.ModCreativeModeTabs;
+import net.Thiago.Cultivate.Item.ModCreativeModeTabs;
 import net.Thiago.Cultivate.block.ModBlocks;
 import net.Thiago.Cultivate.init.*;
 import net.minecraft.network.FriendlyByteBuf;

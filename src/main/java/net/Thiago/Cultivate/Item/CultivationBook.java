@@ -1,4 +1,4 @@
-package net.Thiago.Cultivate.item;
+package net.Thiago.Cultivate.Item;
 
 import net.Thiago.Cultivate.procedures.Add_talentProcedure;
 import net.minecraft.world.level.Level;

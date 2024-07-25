@@ -31,7 +31,7 @@ public class DantianUpRateProcedure {
 			if (sourceentity instanceof Player) {
 				if ((sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio > 999999) {
 					{
-						double _setval = 1000000;
+						float _setval = 1000000;
 						sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.dantian_building_ratio = _setval;
 							capability.syncPlayerVariables(sourceentity);
@@ -39,8 +39,8 @@ public class DantianUpRateProcedure {
 					}
 				} else if ((sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio > 200000) {
 					{
-						double _setval = (sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
-								+ (sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 200 + 1.2);
+						float _setval = (float) ((sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
+                                                        +  (sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 200 + 1.2f));
 						sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.dantian_building_ratio = _setval;
 							capability.syncPlayerVariables(sourceentity);
@@ -48,8 +48,8 @@ public class DantianUpRateProcedure {
 					}
 				} else {
 					{
-						double _setval = (sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
-								+ (sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 100 + 1.2);
+						float _setval = (float) ((sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
+                                                        + (sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 100 + 1.2));
 						sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.dantian_building_ratio = _setval;
 							capability.syncPlayerVariables(sourceentity);
@@ -60,7 +60,7 @@ public class DantianUpRateProcedure {
 			if (entity instanceof Player) {
 				if ((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio > 999999) {
 					{
-						double _setval = 1000000;
+						float _setval = 1000000;
 						entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.dantian_building_ratio = _setval;
 							capability.syncPlayerVariables(entity);
@@ -68,8 +68,8 @@ public class DantianUpRateProcedure {
 					}
 				} else if ((sourceentity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio > 200000) {
 					{
-						double _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
-								+ (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 200 + 1.4);
+						float _setval = (float) ((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
+                                                        + (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 200 + 1.4));
 						entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.dantian_building_ratio = _setval;
 							capability.syncPlayerVariables(entity);
@@ -77,8 +77,8 @@ public class DantianUpRateProcedure {
 					}
 				} else {
 					{
-						double _setval = (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
-								+ (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 100 + 1.4);
+						float _setval = (float) ((entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).dantian_building_ratio
+								 						+ (entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CultivateModVariables.PlayerVariables())).talent * (Proc5Procedure.execute(entity) / 100 + 1.4));
 						entity.getCapability(CultivateModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.dantian_building_ratio = _setval;
 							capability.syncPlayerVariables(entity);

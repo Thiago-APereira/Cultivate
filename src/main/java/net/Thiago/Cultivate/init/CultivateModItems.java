@@ -5,9 +5,9 @@
 package net.Thiago.Cultivate.init;
 
 import net.Thiago.Cultivate.Cultivate;
-import net.Thiago.Cultivate.item.CultivationBook;
-import net.Thiago.Cultivate.item.CultivationInsights;
-import net.Thiago.Cultivate.item.EssenceStoneItem;
+import net.Thiago.Cultivate.Item.CultivationBook;
+import net.Thiago.Cultivate.Item.CultivationInsights;
+import net.Thiago.Cultivate.Item.EssenceStoneItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;

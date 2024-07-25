@@ -1,7 +1,7 @@
 
-package net.Thiago.Cultivate.item;
+package net.Thiago.Cultivate.Item;
 
-import net.Thiago.Cultivate.procedures.Add_talentProcedure;
+import net.Thiago.Cultivate.procedures.EnableCultivationProcedure;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -31,7 +31,7 @@ public class CultivationInsights extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		Add_talentProcedure.execute(entity);
+		EnableCultivationProcedure.execute(entity);
 		return retval;
 	}
 }

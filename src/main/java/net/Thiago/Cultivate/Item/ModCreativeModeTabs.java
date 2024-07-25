@@ -1,4 +1,4 @@
-package net.Thiago.Cultivate.item;
+package net.Thiago.Cultivate.Item;
 
 import net.Thiago.Cultivate.Cultivate;
 import net.Thiago.Cultivate.init.CultivateModItems;

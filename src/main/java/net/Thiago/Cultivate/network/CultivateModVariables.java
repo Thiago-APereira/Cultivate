@@ -107,8 +107,8 @@ public class CultivateModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "cultivate_worldvars";
-		public double maxFoundation = 100000.0;
-		public double max_dantian_building = 200000.0;
+		public float maxFoundation = 100000.0f;
+		public float max_dantian_building = 200000.0f;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -117,8 +117,8 @@ public class CultivateModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			maxFoundation = nbt.getDouble("maxFoundation");
-			max_dantian_building = nbt.getDouble("max_dantian_building");
+			maxFoundation = nbt.getFloat("maxFoundation");
+			max_dantian_building = nbt.getFloat("max_dantian_building");
 		}
 
 		@Override
@@ -257,17 +257,17 @@ public class CultivateModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double italent = 0;
-		public double setInt = 0;
-		public double Damage = 0.0;
-		public double foundation_ratio = 0.0;
-		public double talent = 0.0;
-		public double dantian_building_ratio = 0;
+		public float italent = 0f;
+		public float setInt = 0f;
+		public float Damage = 0.0f;
+		public float foundation_ratio = 0.0f;
+		public float talent = 0.0f;
+		public float dantian_building_ratio = 0f;
 		public String cultivation_stage = "\"Foundation\"";
-		public double test = 0;
-		public double stageCap = 100000.0;
-		public double stagePower = 0;
-		public double damage2 = 0;
+		public float test = 0f;
+		public float stageCap = 100000.0f;
+		public float stagePower = 0f;
+		public float damage2 = 0f;
 		public boolean enable_cultivation = false;
 		public boolean GuiOpen = false;
 
@@ -281,7 +281,7 @@ public class CultivateModVariables {
 			nbt.putDouble("italent", italent);
 			nbt.putDouble("setInt", setInt);
 			nbt.putDouble("Damage", Damage);
-			nbt.putDouble("foundation_ratio", foundation_ratio);
+			nbt.putFloat("foundation_ratio", foundation_ratio);
 			nbt.putDouble("talent", talent);
 			nbt.putDouble("dantian_building_ratio", dantian_building_ratio);
 			nbt.putString("cultivation_stage", cultivation_stage);
@@ -296,17 +296,17 @@ public class CultivateModVariables {
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			italent = nbt.getDouble("italent");
-			setInt = nbt.getDouble("setInt");
-			Damage = nbt.getDouble("Damage");
-			foundation_ratio = nbt.getDouble("foundation_ratio");
-			talent = nbt.getDouble("talent");
-			dantian_building_ratio = nbt.getDouble("dantian_building_ratio");
+			italent = nbt.getFloat("italent");
+			setInt = nbt.getFloat("setInt");
+			Damage = nbt.getFloat("Damage");
+			foundation_ratio = nbt.getFloat("foundation_ratio");
+			talent = nbt.getFloat("talent");
+			dantian_building_ratio = nbt.getFloat("dantian_building_ratio");
 			cultivation_stage = nbt.getString("cultivation_stage");
-			test = nbt.getDouble("test");
-			stageCap = nbt.getDouble("stageCap");
-			stagePower = nbt.getDouble("stagePower");
-			damage2 = nbt.getDouble("damage2");
+			test = nbt.getFloat("test");
+			stageCap = nbt.getFloat("stageCap");
+			stagePower = nbt.getFloat("stagePower");
+			damage2 = nbt.getFloat("damage2");
 			enable_cultivation = nbt.getBoolean("enable_cultivation");
 			GuiOpen = nbt.getBoolean("GuiOpen");
 		}
